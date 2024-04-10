@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("InterfaceEstadistUI8f")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0e1f6d0ded27e3a69cfe96cfd06a437c16978adc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+183e91df0b805c8864ee47b9d48fec00e08dde26")]
 [assembly: System.Reflection.AssemblyProductAttribute("InterfaceEstadistUI8f")]
 [assembly: System.Reflection.AssemblyTitleAttribute("InterfaceEstadistUI8f")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

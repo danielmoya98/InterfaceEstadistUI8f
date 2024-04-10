@@ -436,7 +436,7 @@
                                                     </Button.Background>
                                                     Introducir Aletoriamente
                                                 </Button>
-                                                <Button Click="ButtonBase2_OnClick" Grid.Column="2"
+                                                <Button  Grid.Column="2"
                                                         BorderBrush="Transparent" Margin="0 15 0 15">
                                                     <Button.Background>
                                                         <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
