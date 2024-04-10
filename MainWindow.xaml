@@ -339,7 +339,10 @@
                     </StackPanel>
                 </Grid>
             </Border>
-            <ScrollViewer Grid.Column="1">
+                
+            <!--METODO STURGES-->
+            
+            <ScrollViewer Grid.Column="1" Visibility="Visible">
                 <Border Grid.Column="1" BorderThickness="0" Margin="10 0 10 0"
                         Background="Transparent" CornerRadius="3" Height="Auto">
                     <Border.BorderBrush>
@@ -350,6 +353,7 @@
                     </Border.BorderBrush>
                     <Grid ShowGridLines="False">
                         <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"></RowDefinition>
                             <RowDefinition Height="Auto"></RowDefinition>
                             <RowDefinition Height="Auto"></RowDefinition>
                             <RowDefinition Height="Auto"></RowDefinition>
@@ -518,12 +522,189 @@
                                 </Border.Background>
                                 
                             </Border>
-                        </StackPanel>
+                            
+                            
 
+                        </StackPanel>
+                        
+                        <Border Grid.Row="4" Margin="10" Height="Auto" Width="Auto" Padding="10"
+                                        CornerRadius="10">
+                                    <Border.Background>
+                                        Black
+                                    </Border.Background>
+                                    <StackPanel Orientation="Vertical" Margin="15">
+                                        <StackPanel Orientation="Horizontal">
+                                            <materialDesign:PackIcon Kind="Code" Height="50" Foreground="White"
+                                                                     Width="50">
+                                            </materialDesign:PackIcon>
+                                            <TextBlock FontWeight="Bold" Foreground="White" Margin="10 0 0 0 "
+                                                       VerticalAlignment="Center" FontSize="25">
+                                                Media Aritmetica
+                                            </TextBlock>
+                                        </StackPanel>
+                                       
+                                        <StackPanel Orientation="Horizontal">
+                                            <TextBlock FontSize="15" Margin="0 5 0 0" Foreground="White"
+                                                       TextWrapping="Wrap">
+                                                Formula : (fi(n)*x1(n))/n
+                                            </TextBlock>
+                                            <TextBox IsEnabled="False" Name="media" Grid.Column="2" Foreground="White"
+                                                     materialDesign:HintAssist.Hint="Valor de la Media Aritmetica" Margin="400 0 0 15">
+                                                </TextBox>
+                                        </StackPanel>
+
+
+                                    </StackPanel>
+                                </Border>
+                         
                     </Grid>
                 </Border>
             </ScrollViewer>
+            
+            
+            <!--MEDIA ARITMETICA-->
 
+             <ScrollViewer Grid.Column="1" Visibility="Collapsed">
+                <Border Grid.Column="1" BorderThickness="0" Margin="10 0 10 0"
+                        Background="Transparent" CornerRadius="3" Height="Auto">
+                    <Border.BorderBrush>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                            <GradientStop Color="#3a6186" Offset="1" />
+                            <GradientStop Color="#89253e" Offset="0" />
+                        </LinearGradientBrush>
+                    </Border.BorderBrush>
+                    <Grid ShowGridLines="False">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <StackPanel>
+                            <Border Margin="10 0 10 10" Height="Auto" Width="Auto" CornerRadius="10">
+                                <Border.Background>
+                                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                                        <GradientStop Color="#3a6186" Offset="1" />
+                                        <GradientStop Color="#89253e" Offset="0" />
+                                    </LinearGradientBrush>
+                                </Border.Background>
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="500"></ColumnDefinition>
+                                        <ColumnDefinition Width="*"></ColumnDefinition>
+                                    </Grid.ColumnDefinitions>
+                                    <StackPanel Orientation="Vertical" VerticalAlignment="Center">
+                                        <TextBlock Foreground="White" FontWeight="Bold" Margin="30 0 0 0 "
+                                                   FontSize="50">
+                                            Media Aritmetica
+                                        </TextBlock>
+                                        <TextBlock FontWeight="DemiBold" TextWrapping="Wrap" Foreground="White"
+                                                   Margin="30 0 0 0 "
+                                                   FontSize="15">
+                                            La media aritmética, también conocida como promedio, es una medida estadística utilizada para encontrar el valor típico o central de un conjunto de números. Se calcula sumando todos los valores en el conjunto y luego dividiendo esa suma por el número total de valores.
+                                        </TextBlock>
+                                    </StackPanel>
+                                    <StackPanel Grid.Column="1" Orientation="Vertical" VerticalAlignment="Center"
+                                                HorizontalAlignment="Right">
+                                        <materialDesign:PackIcon Kind="ChartArc" Height="200" Width="200"
+                                                                 Foreground="White" Margin="0 0 60 0">
+                                        </materialDesign:PackIcon>
+                                    </StackPanel>
+                                </Grid>
+                            </Border>
+                        </StackPanel>
+                        <StackPanel Grid.Row="1">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+                                <Border Margin="10" Height="Auto" Width="Auto" Padding="10"
+                                        CornerRadius="10">
+                                    <Border.Background>
+                                        Black
+                                    </Border.Background>
+                                    <StackPanel Orientation="Vertical" Margin="15">
+                                        <StackPanel Orientation="Horizontal">
+                                            <materialDesign:PackIcon Kind="Code" Height="50" Foreground="White"
+                                                                     Width="50">
+                                            </materialDesign:PackIcon>
+                                            <TextBlock FontWeight="Bold" Foreground="White" Margin="10 0 0 0 "
+                                                       VerticalAlignment="Center" FontSize="25">
+                                                Numeros
+                                            </TextBlock>
+                                        </StackPanel>
+                                        <TextBlock FontSize="15" Margin="0 5 0 0" Foreground="White"
+                                                   TextWrapping="Wrap">
+                                            Ingrese sus numeros para calcular la Media Aritmetica
+                                        </TextBlock>
+                                        <StackPanel Orientation="Horizontal">
+                                            <Grid>
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="265"></ColumnDefinition>
+                                                    <ColumnDefinition Width="250"></ColumnDefinition>
+                                                    <ColumnDefinition Width="250"></ColumnDefinition>
+                                                </Grid.ColumnDefinitions>
+                                                <TextBlock Foreground="White" VerticalAlignment="Center" Grid.Column="0"  Margin="0 15 0 15">
+                                                    Cuantos Numeros quiere introducir:
+                                                </TextBlock>
+                                                <TextBox Grid.Column="1" VerticalAlignment="Center"  Name="generartextbox" Foreground="White" BorderBrush="White"
+                                                        Margin="0 15 10 15">
+                                                </TextBox>
+                                                <Button Click="GenerarTextbox_OnClick" Grid.Column="2" BorderBrush="Transparent" Margin="0 15 0 15">
+                                                    <Button.Background>
+                                                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                                                            <GradientStop Color="#3a6186" Offset="1" />
+                                                            <GradientStop Color="#89253e" Offset="0" />
+                                                        </LinearGradientBrush>
+                                                    </Button.Background>
+                                                    Generar Textbox
+                                                </Button>
+
+                                            </Grid>
+                                        </StackPanel>
+                                        <WrapPanel Orientation="Horizontal" Name="Wrap1" >
+                                        </WrapPanel>
+
+                                    </StackPanel>
+                                </Border>
+                                <Border Grid.Row="1" Margin="10 0 10 10" Height="Auto" Width="Auto" CornerRadius="10">
+                                <Border.Background>
+                                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                                        <GradientStop Color="#3a6186" Offset="1" />
+                                        <GradientStop Color="#89253e" Offset="0" />
+                                    </LinearGradientBrush>
+                                </Border.Background>
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="500"></ColumnDefinition>
+                                        <ColumnDefinition Width="*"></ColumnDefinition>
+                                    </Grid.ColumnDefinitions>
+                                    <StackPanel Orientation="Vertical" VerticalAlignment="Center">
+                                        <TextBlock Foreground="White" FontWeight="Bold" Margin="30 0 0 0 "
+                                                   FontSize="50">
+                                            Media Geometrica
+                                        </TextBlock>
+                                        <TextBlock FontWeight="DemiBold" TextWrapping="Wrap" Foreground="White"
+                                                   Margin="30 0 0 0 "
+                                                   FontSize="15">
+                                            La media geométrica es un concepto matemático utilizado para determinar una medida central de un conjunto de valores, especialmente cuando esos valores representan magnitudes que se multiplican entre sí.
+                                        </TextBlock>
+                                    </StackPanel>
+                                    <StackPanel Grid.Column="1" Orientation="Vertical" VerticalAlignment="Center"
+                                                HorizontalAlignment="Right">
+                                        <materialDesign:PackIcon Kind="ChartArc" Height="200" Width="200"
+                                                                 Foreground="White" Margin="0 0 60 0">
+                                        </materialDesign:PackIcon>
+                                    </StackPanel>
+                                </Grid>
+                            </Border>
+                            </Grid>
+                        </StackPanel>
+                    </Grid>
+                </Border>
+            </ScrollViewer>
+            
             <Border Grid.Column="2"
                     CornerRadius="3 3 3 3 " Opacity="0.95"
                     BorderThickness="2 2 2 2" BorderBrush="DarkRed">

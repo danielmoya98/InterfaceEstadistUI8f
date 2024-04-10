@@ -1,0 +1,52 @@
+﻿<Window x:Class="InterfaceEstadistUI8f.profile"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:local="clr-namespace:InterfaceEstadistUI8f"
+        mc:Ignorable="d"
+        Background="Transparent"
+        AllowsTransparency="True"
+        WindowStyle="None"
+        WindowStartupLocation="CenterScreen"
+        Title="profile" Height="300" Width="450">
+   
+    <Border Background="White" Padding="25" CornerRadius="25" >
+        
+    <Grid >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <StackPanel  Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button materialDesign:ButtonAssist.CornerRadius="25" Background="White" BorderThickness="2" Margin="15" Height="Auto" Width="Auto" Padding="20">
+               <Button.BorderBrush>
+                   <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                       <GradientStop Color="#CB356B" Offset="0" />
+                       <GradientStop Color="#BD3F32" Offset="1" />
+                  </LinearGradientBrush>
+               </Button.BorderBrush>
+                <Image Source="C:\Users\Alienware\RiderProjects\InterfaceEstadistUI8f\img\user.png"></Image>
+            </Button>
+            <Button Background="White" Height="Auto" materialDesign:ButtonAssist.CornerRadius="25" BorderThickness="2" Margin="15" Width="165" Padding="20">
+                <Button.BorderBrush>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                        <GradientStop Color="#CB356B" Offset="0" />
+                        <GradientStop Color="#BD3F32" Offset="1" />
+                    </LinearGradientBrush>
+                </Button.BorderBrush>
+                <Image Source="C:\Users\Alienware\RiderProjects\InterfaceEstadistUI8f\img\user2.png"></Image>
+
+            </Button>
+        </StackPanel>
+        
+        <StackPanel Grid.Row="1" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" >
+            <TextBox HorizontalContentAlignment="Center" Width="150" Height="30"  materialDesign:HintAssist.Hint="Ingrese su nombre"></TextBox>
+            <Button>Iniciar</Button>
+        </StackPanel>
+    </Grid>
+        
+    </Border>
+</Window>

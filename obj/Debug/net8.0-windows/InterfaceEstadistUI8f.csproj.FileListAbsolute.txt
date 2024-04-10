@@ -29,3 +29,6 @@ C:\Users\Alienware\RiderProjects\InterfaceEstadistUI8f\bin\Debug\net8.0-windows\
 C:\Users\Alienware\RiderProjects\InterfaceEstadistUI8f\obj\Debug\net8.0-windows\Dictionary1.baml
 C:\Users\Alienware\RiderProjects\InterfaceEstadistUI8f\bin\Debug\net8.0-windows\LiveCharts.dll
 C:\Users\Alienware\RiderProjects\InterfaceEstadistUI8f\bin\Debug\net8.0-windows\LiveCharts.Wpf.dll
+C:\Users\Alienware\RiderProjects\InterfaceEstadistUI8f\obj\Debug\net8.0-windows\InterfaceEstadistUI8f.sourcelink.json
+C:\Users\Alienware\RiderProjects\InterfaceEstadistUI8f\obj\Debug\net8.0-windows\profile.g.cs
+C:\Users\Alienware\RiderProjects\InterfaceEstadistUI8f\obj\Debug\net8.0-windows\profile.baml
